@@ -1,0 +1,23 @@
+
+body {
+
+    background-color: #eeeec0;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-color: black;
+    border-bottom-color: black;
+    border-left-color: black;
+    border-right-color: black;
+}
+header h1  { 
+    color: blue; 
+    font-size: 24pt;
+    text-align: center;
+}
+#heading {text-align: right;}
+h2  { color: black; font-size: 20pt}
+table    {border:0;padding: 0; width: 100%}
+
+
