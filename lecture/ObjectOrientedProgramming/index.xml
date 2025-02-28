@@ -3,7 +3,7 @@
 <?xml-stylesheet type="text/xsl" href="/xml/Jarticle.xsl"?>
 <Jarticle>
     <Title>オブジェクト指向プログラミング特論(Object-oriented Programming)</Title>
-    <Subtitle>2024年度(更新中)</Subtitle>
+    <Subtitle>2024年度</Subtitle>
     <link rel="stylesheet" href="../lecture.css"/>
     <Author Institute="佐賀大学理工学研究科" EmailImg="/images/address.gif">只木進一
     </Author>
@@ -80,35 +80,5 @@
         </div>
         -->
     </Section>
-    <Section Title="レポート課題">
-        <div>
-            <ul>
-                <li>
-                    <a href="Reports/2022/2022-final.pdf">2022年度課題</a><br/>
-                </li>
-                <li>
-                    <a href="Reports/2020-final.pdf">2020年度課題</a><br/>
-                    [<a href="Reports/2020/EulerNonRecursive.java">EulerNonRecursive.java</a>]
-                </li>
-                <li>
-                    <a href="Reports/2018.pdf">2018年度課題</a><br/>
-                    [<a href="Reports/2018/BFS.java">BFS.java</a>
-                    <a href="Reports/2018/DFSNonRecursive.java">DFSNonRecursive.java</a>
-                    ]
-                </li>
-                <li>
-                    <a href="Reports/2016Final.pdf">2016年度課題期末</a>
-                </li>
-                <li>
-                    <a href="Reports/2016.pdf">2016年度課題中間</a>
-                </li>
-                <li>
-                    <a href="Reports/2010.pdf">2010年度課題</a>
-                </li>
-                <li>
-                    <a href="Reports/2008.pdf">2008年度課題</a>
-                </li>
-            </ul>
-        </div>
-    </Section>
+
 </Jarticle>
