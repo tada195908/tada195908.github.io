@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Jarticle SYSTEM "/xml/Jarticle.dtd">
+<?xml-stylesheet type="text/xsl" href="/xml/Jarticle.xsl"?>
+<Jarticle>
+    <Title>オブジェクト指向プログラミング特論(Object-oriented Programming)</Title>
+    <Subtitle>2022年度</Subtitle>
+    <link rel="stylesheet" href="../lecture.css"/>
+    <Author Institute="佐賀大学理工学研究科" EmailImg="/images/address.gif">只木進一
+    </Author>
+    <Section Title="概要">
+        <div>
+            <p>
+情報処理システムが扱い対象をデータとその操作が組となったオブジェクトとして扱うプログラミングの
+枠組みをオブジェクト指向プログラミングと言う。現実の動きとの対応付けが容易であることが利点である。
+それだけでなく、プログラム要素の抽象化、それによる再利用可能性など、プログラム開発の効率化にも寄与する。
+            </p>
+            <p>
+本講義では、Javaを使ったオブジェクト指向プログラミングを、実用的なプログラムを例にとりながら講義する。
+また、抽象化や再利用の効率を上げるためのデザインパターンについても論じる。
+            </p>
+            <p>サンプルのソースコード中の日本語ははUTF-8です。Java17を想定しています。</p>
+        </div>
+    </Section>
+    <Section Title="内容">
+        <div>
+            <ol>
+                <li>
+                    <a href="2022/01_Introduction.pdf">序論：講義の目的</a><br/>
+                    <a href="https://github.com/oop-mc-saga/Sort">
+                    https://github.com/oop-mc-saga/Sort</a>
+                </li>
+                <li>
+                    <a href="2022/02_Interfaces.pdf">インターフェースの利用</a>
+                </li>
+                <li>
+                    <a href="2022/03_Superclasses.pdf">抽象クラスの抽出</a>
+                </li>
+                <li><a href="2022/04_ThreadsAndRunnable.pdf">ThreadとRunnable</a><br/>
+                <a href="https://github.com/oop-mc-saga/Thread">
+                https://github.com/oop-mc-saga/Thread</a>
+                </li>
+                <li><a href="2022/05_CollectionsAndLamdaExpressions.pdf">CollectionとLambda式</a><br/>
+                <a href="https://github.com/oop-mc-saga/Lambda">
+                https://github.com/oop-mc-saga/Lambda</a>
+                </li>
+                <li><a href="2022/06_StringsAndRegularExpressions.pdf">文字列操作と正規表現</a><br/>
+                <a href="https://github.com/oop-mc-saga/StringsAndRegularExpressions">
+                https://github.com/oop-mc-saga/StringsAndRegularExpressions</a>
+                </li>
+				<li><a href ="2022/07_FileIO.pdf">File IOと例外処理</a><br/>
+                <a href="https://github.com/oop-mc-saga/FileIOExamples">
+                https://github.com/oop-mc-saga/FileIOExamples</a>
+				</li>
+				<li><a href ="2022/08_URL.pdf">URL IO</a></li>
+				<li>課題演習</li>
+				<li><a href="2022/10_GUI1.pdf">Graphical User Interface - widgetを使う - </a><br/>
+                <a href="https://github.com/oop-mc-saga/GUI1>
+                https://github.com/oop-mc-saga/GUI1</a>
+				</li>
+				<li><a href="2022/11_GUI2.pdf">Graphical User Interface - widgetを使う2 - </a>
+				</li>
+				<li><a href="2022/12_Event.pdf">Eventとその処理</a><br/>
+				<a href="https://github.com/oop-mc-saga/ColorChoice">
+                https://github.com/oop-mc-saga/ColorChoice</a>
+				</li>
+				<li><a href="2022/13_GUI3.pdf">Graphical User Interface - 描画する - </a><br/>
+				<a href="https://github.com/oop-mc-saga/GUI2">
+                https://github.com/oop-mc-saga/GUI2</a>				
+				</li>
+				<li><a href="2022/14_CircuitEnumeration.pdf">グラフアルゴリズム：閉路の列挙</a><br/>
+				<a href="https://github.com/oop-mc-saga/GraphAlgorithm">
+                https://github.com/oop-mc-saga/GraphAlgorithm</a>				
+				</li>
+
+                <li><a href="javasrc/MyLib.tar.gz">MyLib</a></li>
+            </ol>
+        </div>
+<!--
+        準備中
+        <div>
+            <ul>
+            </ul>
+        </div>
+        -->
+    </Section>
+    <Section Title="レポート課題">
+        <div>
+            <ul>
+                <li>
+                    <a href="Reports/2020-final.pdf">2020年度課題</a><br/>
+                    [<a href="Reports/2020/EulerNonRecursive.java">EulerNonRecursive.java</a>]
+                </li>
+                <li>
+                    <a href="Reports/2018.pdf">2018年度課題</a><br/>
+                    [<a href="Reports/2018/BFS.java">BFS.java</a>
+                    <a href="Reports/2018/DFSNonRecursive.java">DFSNonRecursive.java</a>
+                    ]
+                </li>
+                <li>
+                    <a href="Reports/2016Final.pdf">2016年度課題期末</a>
+                </li>
+                <li>
+                    <a href="Reports/2016.pdf">2016年度課題中間</a>
+                </li>
+                <li>
+                    <a href="Reports/2010.pdf">2010年度課題</a>
+                </li>
+                <li>
+                    <a href="Reports/2008.pdf">2008年度課題</a>
+                </li>
+            </ul>
+        </div>
+    </Section>
+</Jarticle>

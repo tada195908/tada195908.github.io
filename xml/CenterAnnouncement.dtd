@@ -1,0 +1,33 @@
+<!ELEMENT CenterAnnouncement (Year,Month,Date*,(JapaneseDocument|EnglishDocument))>
+<!ELEMENT EnglishDocument (Title,To,From,MainText)>
+<!ELEMENT JapaneseDocument (Title,To,From,MainText)>
+<!ELEMENT From ANY>
+<!ELEMENT To ANY>
+<!ELEMENT Title ANY>
+<!ELEMENT Date (#PCDATA)>
+<!ELEMENT Month (#PCDATA)>
+<!ELEMENT Year (#PCDATA)>
+
+
+  <!ELEMENT MainText (Section*,(p|ul|Figure)*)>
+  <!ELEMENT Subsection (Title,Text)>
+  <!ELEMENT Section (Title,(Text|Subsection*))>
+  <!ELEMENT Text ((p|ul|Figure)*)>
+  <!ELEMENT p ANY>
+  <!ELEMENT pre ANY>
+  <!ELEMENT ul (li+)>
+  <!ELEMENT ol (li+)>
+  <!ELEMENT li ANY>
+
+  <!ELEMENT Figure (Caption*,img*)>
+  <!ATTLIST Figure Label CDATA #IMPLIED>
+  <!ELEMENT Caption (#PCDATA)>
+  <!ELEMENT img EMPTY>
+  <!ATTLIST img src CDATA #REQUIRED
+                alt CDATA #REQUIRED
+                width CDATA #IMPLIED
+                altwidth CDATA #IMPLIED>
+
+<!ELEMENT i ANY>
+<!ELEMENT b ANY>
+<!ELEMENT tt ANY>

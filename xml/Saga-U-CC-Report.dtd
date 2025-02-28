@@ -1,0 +1,38 @@
+<!ELEMENT Saga-U-CC:Report (Title, Date, Author, Address?, ToAddress?,Text*,Section* )>
+<!ATTLIST Saga-U-CC:Report xmlns:Saga-U-CC CDATA "http://www.cc.saga-u.ac.jp">
+
+<!ELEMENT Address ANY>
+<!ELEMENT ToAddress ANY>
+<!ELEMENT Author ANY>
+<!ELEMENT Date (#PCDATA)>
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT Subsection (Title?,Text)>
+<!ELEMENT Section (Title?,Text?, Subsection* )>
+<!ELEMENT Text ANY>
+
+<!ELEMENT p ANY>
+<!ELEMENT ul (li+)>
+<!ELEMENT ol (li+)>
+<!ELEMENT li ANY>
+<!ELEMENT br EMPTY>
+<!ELEMENT i ANY>
+<!ELEMENT b ANY>
+<!ELEMENT tt ANY>
+<!ELEMENT sub ANY>
+<!ELEMENT sup ANY>
+<!ELEMENT pre ANY>
+<!ELEMENT quote ANY>
+<!ELEMENT quotation ANY>
+
+<!ELEMENT Figure (Caption?,img?)>
+<!ATTLIST Figure Label CDATA #IMPLIED
+                 align CDATA #IMPLIED>
+<!ELEMENT Caption (#PCDATA)>
+<!ELEMENT img EMPTY>
+<!ATTLIST img src CDATA #REQUIRED
+              alt CDATA #REQUIRED
+              width CDATA #IMPLIED
+              altwidth CDATA #IMPLIED>
+<!ELEMENT a ANY>
+<!ATTLIST a href CDATA #REQUIRED
+            target CDATA #IMPLIED>

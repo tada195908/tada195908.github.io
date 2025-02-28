@@ -1,0 +1,29 @@
+<!ELEMENT Saga-U-CC:Personnel (Title,Date,ToAddress,FromAddress,MainText)>
+<!ATTLIST Saga-U-CC:Personnel xmlns:Saga-U-CC CDATA "http://www.cc.saga-u.ac.jp">
+
+<!ELEMENT Title ANY>
+<!ELEMENT Date (#PCDATA)>
+<!ELEMENT ToAddress ANY>
+<!ELEMENT FromAddress ANY>
+<!ELEMENT MainText (Opening,Terms)>
+<!ELEMENT Opening ANY>
+<!ELEMENT Terms (Term+)>
+<!ELEMENT Term (Name,Text)>
+<!ELEMENT Name ANY>
+<!ELEMENT Text ANY>
+
+<!ELEMENT p ANY>
+<!ELEMENT ul (li+)>
+<!ELEMENT ol (li+)>
+<!ELEMENT li ANY>
+<!ELEMENT br EMPTY>
+<!ELEMENT i ANY>
+<!ELEMENT b ANY>
+<!ELEMENT tt ANY>
+<!ELEMENT sub ANY>
+<!ELEMENT sup ANY>
+<!ELEMENT quote ANY>
+
+<!ELEMENT a ANY>
+<!ATTLIST a href CDATA #REQUIRED
+            target CDATA #IMPLIED>

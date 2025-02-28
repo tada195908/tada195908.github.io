@@ -1,0 +1,59 @@
+<!ELEMENT Saga-U-CC:Article (Title,Subtitle?,Author?,Date?,link?,(Section|Text)*)>
+<!ATTLIST Saga-U-CC:Article xmlns:Saga-U-CC CDATA "http://www.cc.saga-u.ac.jp">
+
+
+<!ELEMENT Title ANY>
+<!ELEMENT Subtitle ANY>
+<!ELEMENT Author ANY>
+<!ATTLIST Author Institute CDATA #IMPLIED
+                 Email     CDATA #IMPLIED>
+
+<!ELEMENT link EMPTY>
+<!ATTLIST link href CDATA #IMPLIED
+               rel  CDATA #IMPLIED>
+<!ELEMENT Section (Title?,Text?,Subsection*)>
+
+<!ELEMENT Subsection (Title?,Text)>
+<!ELEMENT Text ANY>
+<!ELEMENT div ANY>
+<!ELEMENT p ANY>
+<!ELEMENT ul (li+)>
+<!ELEMENT ol (li+)>
+<!ELEMENT dl (dt,dd)+>
+<!ELEMENT li ANY>
+<!ELEMENT dt ANY>
+<!ELEMENT dd ANY>
+
+<!ELEMENT pre (#PCDATA)>
+<!ELEMENT quote ANY>
+<!ELEMENT Figure (Caption?,img?)>
+<!ATTLIST Figure Label CDATA #IMPLIED>
+<!ELEMENT Table (TableHeader?,TableBody?,Caption?)>
+<!ATTLIST Table  Label CDATA #IMPLIED>
+<!ELEMENT TableHeader (tr)>
+<!ELEMENT TableBody (tr*)>
+<!ELEMENT tr (td|th)*>
+<!ELEMENT td ANY>
+<!ELEMENT th ANY>
+<!ELEMENT Caption (#PCDATA)>
+<!ELEMENT img EMPTY>
+<!ATTLIST img src CDATA #REQUIRED
+              alt CDATA #REQUIRED
+              width CDATA #IMPLIED
+              altwidth CDATA #IMPLIED>
+
+<!ELEMENT applet (param*)>
+<!ATTLIST applet archive CDATA #IMPLIED
+                 code    CDATA #REQUIRED
+                 width   CDATA #IMPLIED
+                 height  CDATA #IMPLIED>
+<!ELEMENT param EMPTY>
+<!ATTLIST param name CDATA #REQUIRED
+                value CDATA #IMPLIED>
+
+<!ELEMENT a ANY>
+<!ATTLIST a href CDATA #REQUIRED>
+<!ELEMENT b ANY>
+<!ELEMENT i ANY>
+<!ELEMENT tt ANY>
+<!ELEMENT Date ANY>

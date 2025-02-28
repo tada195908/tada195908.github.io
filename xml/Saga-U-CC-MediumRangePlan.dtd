@@ -1,0 +1,41 @@
+<!ELEMENT Saga-U-CC:MediumRangePlan (Title,Part*)>
+<!ATTLIST Saga-U-CC:MediumRangePlan 
+xmlns:Saga-U-CC CDATA "http://www.cc.saga-u.ac.jp">
+
+
+<!ELEMENT Title ANY>
+<!ATTLIST Title range CDATA #IMPLIED>
+<!ELEMENT Subtitle ANY>
+<!ELEMENT Part (Title,Subtitle,Chapter*)>
+<!ATTLIST Part number CDATA #IMPLIED>
+
+<!ELEMENT Chapter (Title,Subtitle,Section*)>
+<!ATTLIST Chapter number CDATA #IMPLIED>
+
+<!ELEMENT Section (Title,Subtitle,Subsection*)>
+<!ATTLIST Section number CDATA #IMPLIED>
+
+<!ELEMENT Subsection (Title, Description*,Subtitle,Subdescription*,Text*)>
+<!ATTLIST Subsection number CDATA #IMPLIED>
+
+<!ELEMENT Description (#PCDATA|div|p|ul|ol|dl|br)*>
+<!ELEMENT Subdescription (#PCDATA|div|p|ul|ol|dl|br)*>
+<!ELEMENT Text (#PCDATA|div|p|ul|ol|dl|br)*>
+<!ELEMENT div (#PCDATA|div|p|ul|ol|dl|br)*>
+<!ELEMENT p (#PCDATA|div|p|ul|ol|dl|br)*>
+<!ELEMENT ul (li+)>
+<!ELEMENT ol (li+)>
+<!ATTLIST ol start CDATA #IMPLIED
+             type  CDATA #IMPLIED>
+<!ELEMENT dl (dt,dd)+>
+<!ELEMENT li ANY>
+<!ATTLIST li type CDATA #IMPLIED
+             value CDATA #IMPLIED>
+<!ELEMENT dt ANY>
+<!ELEMENT dd ANY>
+<!ELEMENT b ANY>
+<!ELEMENT i ANY>
+<!ELEMENT tt ANY>
+<!ELEMENT br EMPTY>
+<!ELEMENT a ANY>
+<!ATTLIST a href CDATA #REQUIRED>

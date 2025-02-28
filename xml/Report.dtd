@@ -1,0 +1,9 @@
+<!ELEMENT Report (Title, Date, Author, Address, Section* )>
+<!ELEMENT Address (#PCDATA)>
+<!ELEMENT Author (#PCDATA)>
+<!ELEMENT Date (#PCDATA)>
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT Subsection (Text)>
+<!ATTLIST Subsection Title CDATA #IMPLIED>
+<!ELEMENT Section (Text, Subsection* )>
+<!ATTLIST Section Title CDATA #IMPLIED>

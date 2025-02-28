@@ -1,0 +1,28 @@
+<!ELEMENT Saga-U-CC:ActionPlan (Title,SectionDescription,Annual)>
+<!ATTLIST Saga-U-CC:ActionPlan xmlns:Saga-U-CC CDATA "http://www.cc.saga-u.ac.jp">
+
+
+<!ELEMENT Title (Text)>
+<!ATTLIST Title code CDATA #IMPLIED
+                ocode CDATA #IMPLIED>
+<!ELEMENT SectionDescription (Text)>
+<!ELEMENT Annual (Text)>
+<!ATTLIST Annual Year CDATA #IMPLIED
+                 Month CDATA #IMPLIED
+                 level CDATA #IMPLIED>
+<!ELEMENT Text (#PCDATA|div|p|ul|ol|dl|br)*>
+<!ELEMENT div (#PCDATA|div|p|ul|ol|dl|br)*>
+<!ELEMENT p (#PCDATA|div|p|ul|ol|dl|br)*>
+<!ELEMENT ul (li+)>
+<!ELEMENT ol (li+)>
+<!ELEMENT dl (dt,dd)+>
+<!ELEMENT li ANY>
+<!ELEMENT dt ANY>
+<!ELEMENT dd ANY>
+
+
+
+<!ELEMENT b ANY>
+<!ELEMENT i ANY>
+<!ELEMENT tt ANY>
+<!ELEMENT br EMPTY>

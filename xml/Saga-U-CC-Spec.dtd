@@ -1,0 +1,51 @@
+<!ELEMENT Saga-U-CC:Spec (Header, Body)>
+<!ATTLIST Saga-U-CC:Spec xmlns:Saga-U-CC CDATA "http://www.cc.saga-u.ac.jp">
+
+<!ELEMENT Header (Owner, SystemName, Title?,Date, BaseLatexStyle)>
+<!ATTLIST Header TopPage CDATA #IMPLIED
+                   TopDocument CDATA #IMPLIED>
+<!ELEMENT Owner (#PCDATA)>
+<!ELEMENT SystemName (#PCDATA)>
+<!ELEMENT Date (#PCDATA)>
+<!ELEMENT BaseLatexStyle EMPTY>
+<!ATTLIST BaseLatexStyle name CDATA #REQUIRED>
+
+<!ELEMENT Body (Chapter|Section)*>
+<!ELEMENT Chapter (Title, Section*)>
+<!ATTLIST Chapter label CDATA #IMPLIED>
+<!ELEMENT Section (Title, Text?,SubSection*)>
+<!ATTLIST Section label CDATA #IMPLIED>
+<!ELEMENT SubSection (Title, TopTerms*)>
+<!ATTLIST SubSection label CDATA #IMPLIED>
+<!ELEMENT TopTerms (Title, Terms*)>
+<!ELEMENT Terms ANY>
+<!ELEMENT Title ANY>
+<!ELEMENT Text ANY>
+
+<!ELEMENT p ANY>
+<!ELEMENT div ANY>
+<!ELEMENT ul (li+)>
+<!ELEMENT ol (li+)>
+<!ELEMENT li ANY>
+<!ELEMENT br EMPTY>
+<!ELEMENT i ANY>
+<!ELEMENT b ANY>
+<!ELEMENT tt ANY>
+<!ELEMENT sub ANY>
+<!ELEMENT sup ANY>
+
+<!ELEMENT Figure (Caption?,img?)>
+<!ATTLIST Figure Label CDATA #IMPLIED
+                 align CDATA #IMPLIED>
+<!ELEMENT Caption (#PCDATA)>
+<!ELEMENT img EMPTY>
+<!ATTLIST img src CDATA #REQUIRED
+              alt CDATA #REQUIRED
+              width CDATA #IMPLIED
+              altwidth CDATA #IMPLIED>
+<!ELEMENT a ANY>
+<!ATTLIST a href CDATA #REQUIRED
+            target CDATA #IMPLIED>
+
+<!ELEMENT Input ANY>
+<!ATTLIST Input file CDATA #IMPLIED>

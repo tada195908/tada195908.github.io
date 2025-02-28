@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Jarticle SYSTEM "/xml/Jarticle.dtd">
+<?xml-stylesheet type="text/xsl" href="/xml/Jarticle.xsl"?>
+<Jarticle>
+    <Title>オブジェクト指向プログラミング特論(Object-oriented Programming)</Title>
+    <Subtitle>2010年度</Subtitle>
+    <link rel="stylesheet" href="../lecture.css"/>
+    <Author Institute="佐賀大学総合情報基盤センター" EmailImg="/images/address.gif">只木進一
+    </Author>
+    <Section Title="概要">
+        <div>
+            <p>
+情報処理システムが扱い対象をデータとその操作が組となったオブジェクトとして扱うプログラミングの
+枠組みをオブジェクト指向プログラミングと言う。現実の動きとの対応付けが容易であることが利点である。
+それだけでなく、プログラム要素の抽象化、それによる再利用可能性など、プログラム開発の効率化にも寄与する。
+            </p>
+            <p>
+本講義では、Javaを使ったオブジェクト指向プログラミングを、実用的なプログラムを例にとりながら講義する。
+また、抽象化や再利用の効率を上げるためのデザインパターンについても論じる。
+            </p>
+            <p>サンプルのソースコード中の日本語ははUTF-8です。</p>
+            <p>順次、2010年度版に入れ替え作業中</p>
+        </div>
+    </Section>
+    <Section Title="内容">
+        <div>
+            <ul>
+                <li>
+                    <a href="2010/pdf.2010/Introduction.pdf">序論：講義の目的
+                    </a>
+                </li>
+                <li>
+                    <a href="2010/pdf.2010/NetBeans.pdf">NetBeansの導入
+                    </a>
+                    [<a href="2010/pdf.2010/Exercises/SimpleJava.pdf">課題</a>]
+                </li>
+                <li>
+                    <a href="2010/pdf.2010/SimpleJavaExample.pdf">Java入門
+                    </a>
+                    [<a href="2010/pdf.2010/Exercises/SimpleJava2.pdf">課題</a>]</li>
+                <li>
+<a href="2010/pdf.2010/SimpleJavaExample2.pdf">Java入門2
+                    </a>
+                    <a href="2010/javasrc.2010/SimplestSample/firstSample/NoClass.java">NoClass.java
+                    </a>
+                    <a href="2010/javasrc.2010/SimplestSample/firstSample/WithClass.java">WithClass.java
+                    </a>
+                    <a href="2010/javasrc.2010/SimplestSample/firstSample/Entry.java">Entry.java
+                    </a>
+                    <a href="2010/javasrc.2010/SimplestSample/firstSample/WithClassNew.java">WithClassNew.java
+                    </a>
+                    <a href="2010/javasrc.2010/SimplestSample/firstSample/EntryNew.java">EntryNew.java
+                    </a>
+                </li>
+                <li>
+                    <a href="2010/pdf.2010/WhatIsOOP.pdf">オブジェクト指向の基本的考え方
+                    </a>
+                </li>
+                <li>
+                  <a href="2010/pdf.2010/JavaFeatures.pdf">Java活用</a>
+                  [<a href="2010/pdf.2010/Exercises/SimpleJava3.pdf">課題</a>]
+                  <br/>
+                  [<a href="2010/javasrc.2010/SimplestSample/secondSample/EntryNew.java">Entry.java</a>
+                  <a href="2010/javasrc.2010/SimplestSample/secondSample/WithClassNew.java">WithClassNew.java</a>]<br/>
+                  [<a href="2010/javasrc.2010/SimpestSample/thirdSample/WithAbstractEntry.java">WithAbstractEntry.java</a>
+                  <a href="2010/javasrc.2010/SimpestSample/thirdSample/AbstractEntry.java">AbstractEntry.java</a>
+                  [<a href="2010/javasrc.2010/SimpestSample/thirdSample/EntryOne.java">EntryOne.java</a>]
+                </li>
+                <li><a href="2010/pdf.2010/Inheritance.pdf">クラスの階層、継承</a>
+                <br/>
+                [<a href="2010/javasrc.2010/SimplestSample/universityMembers/Member.java">Member.java</a>
+                 <a href="2010/javasrc.2010/SimplestSample/universityMembers/Student.java">Student.java</a>
+                 <a href="2010/javasrc.2010/SimplestSample/universityMembers/Period.java">Period.java</a>]
+                [<a href="2010/javasrc.2010/SimplestSample/thread/Runner.java">Runner.java</a>]
+                </li>
+                <li><a href="2010/pdf.2010/FileIO.pdf">File IO</a><br/>
+                [<a href="2010/javasrc.2010/FileIOsamples/standardIO/IOMain.java">IOMain.java</a>
+                 <a href="2010/javasrc.2010/FileIOSamples/FileIO/FileIOMain.java">FileIOMain.java</a>]
+                </li>
+                <li><a href="2010/pdf.2010/GUI1.pdf">Graphical User Interface:widgetを使う</a>
+                [<a href="2010/pdf.2010/Exercises/SimpleTimer.pdf">課題</a>]
+                <br/>
+ 		[
+		<a href="2010/javasrc.2010/SampleGUI/guiWithoutAction/MainFrame.java">guiWithoutAction/MainFrame.java</a>
+		<a href="2010/javasrc.2010/SampleGUI/guiWithoutAction/MainFrame.form">guiWithoutAction/MainFrame.form</a>
+		<a href="2010/javasrc.2010/SampleGUI/guiWithAction/MainFrame.java">guiWithAction/MainFrame.java</a>
+		<a href="2010/javasrc.2010/SampleGUI/guiWithAction/MainFrame.form">guiWithtAction/MainFrame.form</a>
+                <a href="2010/javasrc.2010/SampleGUI/fileChooser/FileChooserMain.java">fileChooser/FileChooserMain.java</a>
+                <a href="2010/javasrc.2010/SampleGUI/fileChooser/FileChooserMain.form">fileChooser/FileChooserMain.form</a>
+                <a href="2010/javasrc.2010/SampleGUI/fileChooser/FileUtil.java">fileChooser/FileUtil.java</a>
+		]<br/>
+                [課題コード
+                <a href="2010/javasrc.2010/SampleGUI/simpleTimer/Timer.java">simpleTimer/Timer.java</a>
+                <a href="2010/javasrc.2010/SampleGUI/simpleTimer/SimpleTimer.java">simpleTimer/SimpleTimer.java</a>
+                <a href="2010/javasrc.2010/SampleGUI/simpleTimer/SimpleTimer.form">simpleTimer/SimpleTimer.form</a>
+                ]
+                </li>
+                <li><a href="2010/pdf.2010/GUI2.pdf">Graphical User Interface:描画する</a><br/>
+                [<a href="2010/pdf.2010/Exercises/SimpleSquareDrawer.pdf">課題</a>]
+                <br/>
+                [
+                <a href="2010/javasrc.2010/SampleGUI/shapeSamples/ShapeSamplesMain.java">shapeSamples/ShapeSamplesMain.java</a>
+                <a href="2010/javasrc.2010/SampleGUI/shapeSamples/ShapeSamplesMain.form">shapeSamples/ShapeSamplesMain.form</a>
+                <a href="2010/javasrc.2010/SampleGUI/shapeSamples/DrawPanel.java">shapeSamples/DrawPanel.java</a>
+                <a href="2010/javasrc.2010/SampleGUI/shapeSamples/DrawPanel.form">shapeSamples/DrawPanel.form</a>
+                <a href="2010/javasrc.2010/SampleGUI/simpleDrawer/SimpleDrawerMain.java">simpleDrawer/SimpleDrawerMain.java</a>
+                <a href="2010/javasrc.2010/SampleGUI/simpleDrawer/SimpleDrawerMain.form">simpleDrawer/SimpleDrawerMain.form</a>
+                <a href="2010/javasrc.2010/SampleGUI/simpleDrawer/DrawPanel.java">simpleDrawer/DrawPanel.java</a>
+                <a href="2010/javasrc.2010/SampleGUI/simpleDrawer/DrawPanel.form">simpleDrawer/DrawPanel.form</a>
+                ]<br/>
+                [課題コード
+                <a href="2010/javasrc.2010/SampleGUI/simpleSquareDrawer/SimpleSquareDrawerMain.java"> SimpleSquareDrawerMain.java</a>
+                <a href="2010/javasrc.2010/SampleGUI/simpleSquareDrawer/SimpleSquareDrawerMain.form"> SimpleSquareDrawerMain.form</a>
+                <a href="2010/javasrc.2010/SampleGUI/simpleSquareDrawer/DrawPanel.java">DrawPanel.java</a>
+                <a href="2010/javasrc.2010/SampleGUI/simpleSquareDrawer/DrawPanel.form">DrawPanel.form</a>
+                <a href="2010/javasrc.2010/SampleGUI/simpleSquareDrawer/MyShape.java">MyShape.java</a>
+                ]</li>
+                <li><a href="2010/pdf.2010/CMOV.pdf">
+                例：結合写像型最適速度交通流モデルのシミュレーション</a>
+                [<a href="2010/javasrc.2010/CMOV.tar.gz">ソースコード</a>]</li>
+                <li><a href="2010/pdf.2010/SimpleRandomWalk.pdf">
+                例：簡単な酔歩シミュレーション</a>
+                [<a href="2010/javasrc.2010/SimpleRandomWalk.tar.gz">ソースコード</a>]
+                </li>
+                <li><a href="2010/pdf.2010/DB.pdf">データベースの利用</a>
+                [<a href="2010/javasrc.2010/DBSample.tar.gz">ソースコード</a>]</li>
+                <li><a href="2010/pdf.2010/XML.pdf">XMLの利用</a>
+                [<a href="2010/javasrc.2010/XMLSample.tar.gz">ソースコード</a>]</li>
+                <li><a href="2010/pdf.2010/DB.pdf">データベースの利用</a>
+                [<a href="2010/javasrc.2010/DBSample.tar.gz">ソースコード</a>]</li>
+                <li><a href="2010/pdf.2010/Servlet.pdf">サーブレット</a>
+                [<a href="2010/javasrc.2010/ServletSample.tar.gz">ソースコード</a>]</li>
+                <li><a href="2010/pdf.2010/summary.pdf">まとめ</a></li>
+            </ul>
+        </div>
+    </Section>
+    <Section Title="レポート課題">
+        <div>
+          <ul>
+            <li><a href="Reports/2010.pdf">2010年度課題</a></li>
+            <li><a href="Reports/2008.pdf">2008年度課題</a></li>
+          </ul>
+        </div>
+    </Section>
+</Jarticle>

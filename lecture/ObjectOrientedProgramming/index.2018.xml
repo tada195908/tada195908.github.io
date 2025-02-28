@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Jarticle SYSTEM "/xml/Jarticle.dtd">
+<?xml-stylesheet type="text/xsl" href="/xml/Jarticle.xsl"?>
+<Jarticle>
+    <Title>オブジェクト指向プログラミング特論(Object-oriented Programming)</Title>
+    <Subtitle>2018年度</Subtitle>
+    <link rel="stylesheet" href="../lecture.css"/>
+    <Author Institute="佐賀大学工学系研究科" EmailImg="/images/address.gif">只木進一
+    </Author>
+    <Section Title="概要">
+        <div>
+            <p>
+情報処理システムが扱い対象をデータとその操作が組となったオブジェクトとして扱うプログラミングの
+枠組みをオブジェクト指向プログラミングと言う。現実の動きとの対応付けが容易であることが利点である。
+それだけでなく、プログラム要素の抽象化、それによる再利用可能性など、プログラム開発の効率化にも寄与する。
+            </p>
+            <p>
+本講義では、Javaを使ったオブジェクト指向プログラミングを、実用的なプログラムを例にとりながら講義する。
+また、抽象化や再利用の効率を上げるためのデザインパターンについても論じる。
+            </p>
+            <p>サンプルのソースコード中の日本語ははUTF-8です。Java8を想定しています。</p>
+        </div>
+    </Section>
+    <Section Title="内容">
+        <div>
+            <ul>
+                <li>
+                    <a href="2018/pdf/Introduction.pdf">序論：講義の目的</a>
+                </li>
+                <li>
+                    <a href="2018/pdf/Interface.pdf">インターフェースの利用</a>
+                </li>
+                <li>
+                    <a href="2018/pdf/Superclass.pdf">抽象クラスの抽出</a>
+                </li>
+                <li><a href="2018/pdf/ThreadsAndRunnable.pdf">ThreadとRunnable</a></li>
+                <li><a href="2018/pdf/CollectionsAndLamdaExpressions.pdf">CollectionとLambda式</a></li>
+                <li><a href="2018/pdf/StringsAndRegularExpressions.pdf">文字列操作と正規表現</a></li>
+				<li><a href ="2018/pdf/FilIO.pdf">File IOと例外処理</a></li>
+				<li><a href="2018/pdf/URL.pdf">URL IO</a></li>
+				<li><a href="2018/pdf/GUI1.pdf">Graphical User Interface - widgetを使う - </a></li>
+				<li><a href="2018/pdf/Event.pdf">Eventとその処理</a></li>
+				<li><a href="2018/pdf/GUI2.pdf">Graphical User Interface - 描画する - </a></li>
+				<li><a href="2018/pdf/GraphSearch.pdf">Graphの探索</a></li>
+                <li><a href="2018/javasrc/MyLib.tar.gz">MyLib</a></li>
+            </ul>
+        </div>
+    </Section>
+    <Section Title="レポート課題">
+        <div>
+            <ul>
+                <li>
+                    <a href="Reports/2016Final.pdf">2016年度課題期末</a>
+                </li>
+                <li>
+                    <a href="Reports/2016.pdf">2016年度課題中間</a>
+                </li>
+                <li>
+                    <a href="Reports/2010.pdf">2010年度課題</a>
+                </li>
+                <li>
+                    <a href="Reports/2008.pdf">2008年度課題</a>
+                </li>
+            </ul>
+        </div>
+    </Section>
+</Jarticle>
